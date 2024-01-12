@@ -1,0 +1,40 @@
+.navbar {
+  background: #000000;
+  color: #fff;
+}
+.nav-link {
+  font-size: 20px;
+  color: #fff;
+}
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.container ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .nav-link.active,
+.navbar-dark .nav-link:focus,
+.navbar-dark .nav-link:hover {
+  color: #fec400;
+}
